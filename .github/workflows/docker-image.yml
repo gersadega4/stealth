@@ -24,4 +24,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ovrwavs9/gas:latest
+          tags: estnues4u35/gcp:latest
