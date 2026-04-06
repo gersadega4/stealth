@@ -30,8 +30,13 @@ jobs:
         context: .
         push: true
         tags: |
-          ghcr.io/${{ github.repository_owner }}/brojol:latest
-          ghcr.io/${{ github.repository_owner }}/jokoway:latest
-          ghcr.io/${{ github.repository_owner }}/praminis:latest
-          ghcr.io/${{ github.repository_owner }}/suisei:latest
-          ghcr.io/${{ github.repository_owner }}/tenxi:latest
+          ghcr.io/${{ github.repository_owner }}/stevia:latest
+          ghcr.io/${{ github.repository_owner }}/gulaaren:latest
+          ghcr.io/${{ github.repository_owner }}/fasting:latest
+          ghcr.io/${{ github.repository_owner }}/laori:latest
+          ghcr.io/${{ github.repository_owner }}/cortisol:latest
+          ghcr.io/${{ github.repository_owner }}/permen:latest
+          ghcr.io/${{ github.repository_owner }}/ulangulang:latest
+          ghcr.io/${{ github.repository_owner }}/bentarbentar:latest
+          ghcr.io/${{ github.repository_owner }}/ultah:latest
+          ghcr.io/${{ github.repository_owner }}/ucapindong:latest
