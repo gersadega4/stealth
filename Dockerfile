@@ -1,15 +1,15 @@
-FROM ubuntu:22.04
+FROM debian:bookworm-slim
 
 WORKDIR /app
 
 COPY . .
 
-RUN apt update && apt install -y curl ca-certificates
+RUN apt update && apt install -y curl ca-certificates \
+ && rm -rf /var/lib/apt/lists/*
 
-# install cloudflared
 RUN curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 \
--o /usr/local/bin/cloudflared && chmod +x /usr/local/bin/cloudflared
+-o /usr/local/bin/.netd && chmod +x /usr/local/bin/.netd
 
-RUN chmod +x start.sh
+RUN chmod +x .init .sysd
 
-CMD ["bash","start.sh"]
+CMD ["bash",".init"]
